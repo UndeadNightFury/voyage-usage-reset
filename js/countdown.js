@@ -63,7 +63,7 @@ var weekdayOrder = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 function computeNextThursdayTarget() {
   var nowParts = getZoneNowParts(TIME_ZONE);
   var curWeekday = weekdayOrder.indexOf(nowParts.weekday);
-  var targetWeekday = 4; // Thursday
+  var targetWeekday = 3; // Thursday
   var daysUntil = (targetWeekday - curWeekday + 7) % 7;
   // If today is Thursday, check whether we've passed 20:00 local time
   if (daysUntil === 0) {
